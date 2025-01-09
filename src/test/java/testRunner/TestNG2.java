@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 @Test
 @CucumberOptions(features="src/test/java/features",glue ="stepDefinitions",monochrome=true,
-        tags ="@Credentialing",
+        tags ="@tag1",
         plugin= {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 
 )

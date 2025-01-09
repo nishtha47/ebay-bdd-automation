@@ -1,0 +1,4 @@
+pages\ebay_Page\ebayItem_AddToCart_Page.class
+pages\ebay_Page\ebayItem_Search_Page.class
+pages\PageObjectManager.class
+pages\ebay_Page\ebayItem_Checkout_Page.class

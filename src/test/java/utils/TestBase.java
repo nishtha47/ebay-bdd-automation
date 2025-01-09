@@ -30,6 +30,11 @@ public class TestBase {
 
                 options.addArguments("--disable-notifications");
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//src//test//resources//chromedriver.exe");
+                options.addArguments("--remote-allow-origins=*"); // Allow connections
+                options.addArguments("--no-sandbox");            // Disable sandboxing
+                options.addArguments("--disable-dev-shm-usage"); // Avoid resource issues
+               // WebDriver driver = new ChromeDriver(options);
+               // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                 driver = new ChromeDriver(options);
             }
             if (browser.equalsIgnoreCase("firefox")) {
